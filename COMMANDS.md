@@ -1,119 +1,133 @@
-# Applause
+## Welcome to the wiki!
 
-applause|applaud|bravo|slow clap -> Get applause
-sarcastic applause|clap -> Get sarcastic applause
+This is a list of all the commands for the new and revolutionary PernixBot!
 
-# Advice
-pernixbot what should I do about (.*)
-pernixbot what do you think about (.*)
-pernixbot how do you handle (.*)
-pernixbot I need some advice
+Note: all commands need the prefix `@pernixbot`
 
-Returns some free advice
+## Applause
 
-# 9gag
+applause | applaud | bravo | slow clap -> Get applause
 
-pernixbot 9gag me -> Return some random 9gag meme
+sarcastic applause | clap -> Get sarcastic applause
 
-# Ackbar
+## Advice
 
-it's a trap -> Display an Admiral Ackbar piece of wonderH
+what should I do about _ | what do you think about _ | how do you handle _ | I need some advice -> Returns some free advice
 
-# Benjamin Black Quote
+## 9gag
 
-ask b6n - Answer with random wizdom from Benjamin Black
+9gag me -> Return some random 9gag meme
 
-# Beer me
+## Ackbar
 
-pernixbot beer me -> Grabs a beer
+it's a trap -> Display an Admiral Ackbar piece of wonder
 
-# Birthday
+## Benjamin Black Quote
 
-pernixbot birthday quote for <user> -> congratulate <user> with a random birthday quote
-pernixbot celebrate me <user> -> congratulate <user> with an inspirational greeting 
-pernixbot happy birthday me <user> -> congratulate <user> with a humorous greeting
+ask b6n -> Answer with random wizdom from Benjamin Black
 
-# Cheer up
+## Beer me
 
-pernixbot cheer me up -> A little pick me up
+beer me -> Grabs a beer
 
-# Chuck Norris
+## Birthday
 
-pernixbot chuck norris -> random Chuck Norris awesomeness
-pernixbot chuck norris me <user> -> let's see how <user> would do as Chuck Norris
+birthday quote for `user` -> congratulate `user` with a random birthday quote
 
-# Class namer
+celebrate me `user` -> congratulate `user` with an inspirational greeting
 
-pernixbot class me -> generates a class name
+happy birthday me `user` -> congratulate `user` with a humorous greeting
 
-# Complete me
+## Cheer up
 
-pernixbot complete me -> Google Suggest a phrase
+cheer me up -> A little pick me up
 
-# Deal with it
+## Chuck Norris
+
+chuck norris -> random Chuck Norris awesomeness
+
+chuck norris me `user` -> let's see how `user` would do as Chuck Norris
+
+## Class namer
+
+class me -> generates a class name
+
+## Complete me
+
+complete me -> Google Suggest a phrase
+
+## Deal with it
 
 deal with it -> display a "deal with it" gif
 
-# Decide
+## Decide
 
-pernixbot decide "<option 1>" "<option 2>" "<option x>" -> Randomly picks an option
-pernixbot decide <option1> <option2> <option3> -> Randomly picks an option
+decide `option1` `option2` `option3` -> Randomly picks an option
 
-# Defprogramming quote
+decide `"option1"` `"option2"` `"option3"` -> Randomly picks an option
 
-pernixbot def programming -> Display a random programming quote from defprogramming.com
+## Defprogramming quote
 
-# Dayly Dilbert
+def programming -> Display a random programming quote from defprogramming.com
 
-pernixbot show me dilbert -> gets the daily dilbert
+## Daily Dilbert
 
-# Do it live
+show me dilbert -> gets the daily dilbert
+
+## Do it live
 
 do it live -> Fuck it, we'll do it live!
 
-# Email
+## Email
 
-pernixbot email <user@email.com> -s <subject> -m <message> -> Sends email with the <subject> <message> to address <user@email.com>
+email `user@email.com` -s `subject` -m `message` -> Sends email with the `subject` `message` to address `user@email.com`
 
-# Some emojis
+## Some emojis
 
-pernixbot emoji me -> Returns a random emoji
-pernixbot emoji spin me -> Spin the emoji slots
-pernixbot emoji card me -> Returns a random card against humanity with emoji
+emoji me -> Returns a random emoji
 
-# Facepalm
+emoji spin me -> Spin the emoji slots
+
+emoji card me -> Returns a random card against humanity with emoji
+
+## Facepalm
 
 facepalm -> Self explanatory
 
-# Flip
+## Flip
 
-pernixbot flip <text> -> express your anger
-pernixbot rage flip <text> -> express your anger with rage
-pernixbot unflip <text>
+flip `text` -> express your anger
 
-# Fuck yea nouns
+rage flip `text` -> express your anger with rage
 
-fuck yeah <noun> -> Displays a fuck yeah image for the given noun
+unflip `text` -> puts table back
 
-# Hide ya kids
+## Fuck yea nouns
+
+fuck yeah `noun` -> Displays a fuck yeah image for the given noun
+
+## Hide ya kids
 
 hide ya kids -> Hide `em!
 
-# Jokes
+## Jokes
 
-pernixbot joke/jokel/jokels -> Returns a random joke from jokels.com
+joke | jokel | jokels -> Returns a random joke from jokels.com
 
-# Like a boss
+## Like a boss
 
 like a boss -> Self explanatory
 
-# Look of disapproval
+## Look of disapproval
 
-pernixbot lod <name> - gives back the character for the look of disapproval, optionally @name
+lod `user` - gives back the character for the look of disapproval, optionally @name
 
-# Urban Dictionary
+## Urban Dictionary
 
-pernixbot what is <term>?         - Searches Urban Dictionary and returns definition
-pernixbot urban me <term>         - Searches Urban Dictionary and returns definition
-pernixbot urban define me <term>  - Searches Urban Dictionary and returns definition
-pernixbot urban example me <term> - Searches Urban Dictionary and returns example
+what is `term`?         -> Searches Urban Dictionary and returns definition
+
+urban me `term`         -> Searches Urban Dictionary and returns definition
+
+urban define me `term`  -> Searches Urban Dictionary and returns definition
+
+urban example me `term` -> Searches Urban Dictionary and returns example
