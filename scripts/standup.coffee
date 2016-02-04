@@ -8,7 +8,7 @@
 #   ajacksified, brandonvalentine
 TIMEZONE = "America/Costa_Rica"
 REMINDER_TIME = "*/30 0 8-17 * * 1-5" # Monday-Friday 8am
-ROOM = "#daily-stand-up-goals"
+ROOM = "daily-stand-up-goals"
 
 cronJob = require('cron').CronJob
 
