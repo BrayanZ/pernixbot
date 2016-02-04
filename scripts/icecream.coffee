@@ -1,5 +1,5 @@
 TIMEZONE = "America/Costa_Rica"
-REMINDER_TIME = "0 50 14 * * 1-5" # Monday-Friday 8am
+REMINDER_TIME = "0 50 14 * * 1-5" # Monday-Friday 2.50pm
 ROOM = "#random"
 
 cronJob = require('cron').CronJob
