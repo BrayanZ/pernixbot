@@ -25,7 +25,8 @@
     "hubot-youtube": "^1.0.1",
     "soupselect": "0.2.0",
     "validator": "0.4.20",
-    "xml2js": "0.1.14"
+    "xml2js": "0.1.14",
+    "cron": "^1.1.0"
   },
   "engines": {
     "node": "0.10.25",
