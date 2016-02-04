@@ -30,5 +30,8 @@
   "engines": {
     "node": "0.10.25",
     "npm": "3.5.3"
+  },
+  "devDependencies": {
+    "cron": "^1.1.0"
   }
 }
