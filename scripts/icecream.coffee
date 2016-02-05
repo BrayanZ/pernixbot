@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  call = "@channel Hey y'all!\n"
+  call = "@here Hey y'all!\n"
   phrases = [
     "Anyone :ice_cream: at :clock3:?",
     "There seems to be a beloved event ( :icecream: ) scheduled in the hearts of the people at :clock3: ... anybody in?",
