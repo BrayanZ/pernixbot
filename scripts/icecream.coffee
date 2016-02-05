@@ -1,9 +1,3 @@
-TIMEZONE = "America/Costa_Rica"
-REMINDER_TIME = "0 55 14 * * 1-5" # Monday-Friday 2.50pm
-ROOM = "random"
-
-cronJob = require('cron').CronJob
-
 module.exports = (robot) ->
   call = "@channel Hey y'all!\n"
   phrases = [
@@ -15,11 +9,7 @@ module.exports = (robot) ->
     "Come to the dark side! We have :ice_cream: at :clock3:!"
   ]
 
-  reminder = new cronJob REMINDER_TIME, -> robot.messageRoom ROOM, randomPhrase()
-  null
-  true
-  TIMEZONE
-
-  reminder.start()
+  robot.respond /icecream/i, (msg) ->
+    msg.send randomPhrase()
 
   randomPhrase = -> return call + phrases[Math.floor(Math.random() * phrases.length)]
