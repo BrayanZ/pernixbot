@@ -16,4 +16,4 @@ module.exports = (robot) ->
   ]
 
   robot.respond /(what are the )?standup questions(\?)?/i, (msg) ->
-    msg.send questions.join("\n")
+    robot.messageRoom "#daily-stand-up-goals", questions.join("\n")

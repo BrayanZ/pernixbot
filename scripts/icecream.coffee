@@ -10,6 +10,6 @@ module.exports = (robot) ->
   ]
 
   robot.respond /icecream/i, (msg) ->
-    msg.send randomPhrase()
+    robot.messageRoom "#random", randomPhrase()
 
   randomPhrase = -> return call + phrases[Math.floor(Math.random() * phrases.length)]
