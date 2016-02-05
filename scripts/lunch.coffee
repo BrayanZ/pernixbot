@@ -8,4 +8,4 @@ module.exports = (robot) ->
   robot.respond /lunch/i, (msg) ->
     robot.messageRoom "#random", randomLunch()
 
-  randomLunch = -> return lunches[Math.floor(Math.random() * lunches.length)] + " ?"
+  randomLunch = -> return lunches[Math.floor(Math.random() * lunches.length)] + " @ :clock12: ?"
