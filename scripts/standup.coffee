@@ -15,5 +15,18 @@ module.exports = (robot) ->
     "Are there any impediments in your way?"
   ]
 
-  robot.respond /(what are the )?standup questions(\?)?/i, (msg) ->
-    robot.messageRoom "#daily-stand-up-goals", questions.join("\n")
+  burn_questions = [
+    "What's up guys? Aren't ya forgetting something?! :unamused:"
+    "What did you do yesterday?",
+    "What will you do today?",
+    "Are there any impediments in your way?"
+  ]
+
+  robot.respond /(what are the )?standup questions(\?)?(.*)/i, (msg) ->
+    people = msg.match[3]
+
+    if people.length == 0
+      robot.messageRoom "#daily-stand-up-goals", questions.join("\n")
+    else
+      robot.messageRoom "#daily-stand-up-goals", people + "\n" + burn_questions.join("\n")
+
