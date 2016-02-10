@@ -14,6 +14,10 @@ sarcastic applause | clap -> Get sarcastic applause
 
 what should I do about _ | what do you think about _ | how do you handle _ | I need some advice -> Returns some free advice
 
+## A/C reminder
+
+Open a direct chat with the bot and type `ac`, he'll know what to do
+
 ## 9gag
 
 9gag me -> Return some random 9gag meme
@@ -106,9 +110,25 @@ unflip `text` -> puts table back
 
 fuck yeah `noun` -> Displays a fuck yeah image for the given noun
 
+## Goals
+
+Open a direct chat with the bot and type `standup questions` and he'll remind everyone.
+
+But if ya wanna burn specific people go `standup questions @user1 @user2... @userN`
+
+## Help
+
+`help` will make the bot spill the beans and single handedly tell ya every command he knows
+
+`-h` | `\h` | `what can you do?` | `commands` will make the bot send ya a link to this wiki
+
 ## Hide ya kids
 
 hide ya kids -> Hide `em!
+
+## Ice cream
+
+Open a direct chat with the bot and type `icecream`, he'll know what to do
 
 ## Jokes
 
@@ -121,6 +141,10 @@ like a boss -> Self explanatory
 ## Look of disapproval
 
 lod `user` - gives back the character for the look of disapproval, optionally @name
+
+## Lunch
+
+Again, open a direct chat with the bot and type `lunch`, he'll know what to do.
 
 ## Urban Dictionary
 
