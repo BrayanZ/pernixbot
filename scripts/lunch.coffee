@@ -2,7 +2,7 @@ module.exports = (robot) ->
 
   lunches = [
     ":bento:", ":pizza:", ":hotdog:", ":taco:",
-    ":hamburger: :fries:", ":meat_on_bone"
+    ":hamburger: :fries:", ":meat_on_bone:"
   ]
   
   robot.respond /lunch/i, (msg) ->
