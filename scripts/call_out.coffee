@@ -1,8 +1,14 @@
+moment = require('moment')
+timezone = require('moment-timezone')
+
+TIME_ZONE = "America/Costa_Rica"
+
 module.exports = (robot) ->
   
-  dateToday = new Date
-  hour = dateToday.getHours()
-  work_hours = [12, 17]
+  dateToday = moment()
+  costaRica = timezone(dateToday, TIME_ZONE)
+  hour = moment(costaRica).get('hour')
+  work_hours = [13, 17]
 
   robot.respond /[\s\S]/i, (msg) ->
     if hour < work_hours[0] || hour > work_hours[1]
