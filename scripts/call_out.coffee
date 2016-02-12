@@ -8,11 +8,10 @@ module.exports = (robot) ->
   dateToday = moment()
   costaRica = timezone(dateToday, TIME_ZONE)
   hour = moment(costaRica).get('hour')
-  work_hours = [13, 17]
 
   robot.respond /[\s\S]/i, (msg) ->
-    if hour < work_hours[0] || hour > work_hours[1]
-      msg.send randomCall(msg.message.user.name)
+    if !workingHours(hour)
+      robot.messageRoom "#random", randomCall(msg.message.user.name)
 
   randomCall = (username) ->
     insults = [
@@ -23,7 +22,12 @@ module.exports = (robot) ->
       "WHOAAA! ... You scared me creep! @#{username}",
       "Why you making me work at this time @#{username}?! This is abuse! :shakefist:",
       "You're on my blacklist now @#{username}!",
-      "Dammit Jerry! @#{username}"
+      "Dammit Jerry! @#{username}",
+      "@#{username} Stop working my ass off! :rage:",
+      "Getting real tired of your :shit: @#{username}!"
     ]
 
     return insults[Math.floor(Math.random() * insults.length)]
+
+  workingHours = (h) ->
+    return h > 8 and h < 17
