@@ -29,7 +29,7 @@ module.exports = (robot) ->
       "Getting real tired of your :shit: @#{username}!"
     ]
 
-    return insults[Math.floor(Math.random() * insults.length)] + " | #{hour} | "
+    return insults[Math.floor(Math.random() * insults.length)] + " | #{hour - OFFSET} | "
 
   workingHours = (h) ->
     h = h - OFFSET
