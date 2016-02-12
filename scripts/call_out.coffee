@@ -11,7 +11,8 @@ module.exports = (robot) ->
 
   robot.respond /[\s\S]/i, (msg) ->
     if !workingHours(hour)
-      robot.messageRoom "#random", randomCall(msg.message.user.name)
+      # robot.messageRoom "#random", randomCall(msg.message.user.name)
+      msg.send randomCall(msg.message.user.name)
 
   randomCall = (username) ->
     insults = [
@@ -27,7 +28,7 @@ module.exports = (robot) ->
       "Getting real tired of your :shit: @#{username}!"
     ]
 
-    return insults[Math.floor(Math.random() * insults.length)]
+    return insults[Math.floor(Math.random() * insults.length)] + " | #{hour} | "
 
   workingHours = (h) ->
     return h > 8 and h < 17
