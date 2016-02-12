@@ -6,7 +6,7 @@ module.exports = (robot) ->
 
   robot.respond /[\s\S]/i, (msg) ->
     if hour < work_hours[0] || hour > work_hours[1]
-      msg.send randomCall(msg.message.user)
+      msg.send randomCall(msg.message.user.name)
 
   randomCall = (username) ->
     insults = [
