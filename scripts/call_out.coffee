@@ -12,8 +12,8 @@ module.exports = (robot) ->
 
   robot.respond /[\s\S]/i, (msg) ->
     if !workingHours(hour)
-      # robot.messageRoom "#random", randomCall(msg.message.user.name)
-      msg.send randomCall(msg.message.user.name)
+      robot.messageRoom "#random", randomCall(msg.message.user.name)
+      msg.send "You're getting some :fire: punk!"
 
   randomCall = (username) ->
     insults = [
