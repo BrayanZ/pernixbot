@@ -33,4 +33,4 @@ module.exports = (robot) ->
 
   workingHours = (h) ->
     h = h - OFFSET
-    return h > 8 and h < 17
+    return h > 16 and h < 17
