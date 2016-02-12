@@ -2,7 +2,7 @@ moment = require('moment')
 timezone = require('moment-timezone')
 
 TIME_ZONE = "America/Costa_Rica"
-OFFSET = 8
+OFFSET = 6
 
 module.exports = (robot) ->
   
