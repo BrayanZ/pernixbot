@@ -2,6 +2,7 @@ moment = require('moment')
 timezone = require('moment-timezone')
 
 TIME_ZONE = "America/Costa_Rica"
+OFFSET = 8
 
 module.exports = (robot) ->
   
@@ -31,4 +32,5 @@ module.exports = (robot) ->
     return insults[Math.floor(Math.random() * insults.length)] + " | #{hour} | "
 
   workingHours = (h) ->
+    h = h - OFFSET
     return h > 8 and h < 17
