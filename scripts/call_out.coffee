@@ -10,10 +10,10 @@ module.exports = (robot) ->
   costaRica = timezone(dateToday, TIME_ZONE)
   hour = moment(costaRica).get('hour')
 
-  robot.respond /[\s\S]/i, (msg) ->
-    if !workingHours(hour)
-      robot.messageRoom "#random", randomCall(msg.message.user.name)
-      msg.send "You're getting some :fire: punk!"
+  # robot.respond /[\s\S]/i, (msg) ->
+  #   if !workingHours(hour)
+  #     robot.messageRoom "#random", randomCall(msg.message.user.name)
+  #     msg.send "You're getting some :fire: punk!"
 
   randomCall = (username) ->
     insults = [
